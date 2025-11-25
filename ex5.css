@@ -9,11 +9,10 @@ body{
 
 .pokemon-card-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    height: 100vh;
     gap: 20px;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .pokemon-image{
@@ -34,6 +33,24 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(105, 105, 105);
     line-height: 0px;
+}
+
+.pokemon-cardGengar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 315px;
+    font-weight:500;
+    background: #353534;
+    border-radius: 10px;
+    border: 2px solid rgb(105, 105, 105);
+    line-height: 0px;
+    align-self: flex-end;
+}
+
+.pokemon-cardGengar h2{
+    align-self: center;
+    margin-bottom: 30px;
 }
 
 .pokemon-card h2{
@@ -58,65 +75,9 @@ body{
     justify-content: space-between;
 }
 
-/* PSYDUCK BAR STYLE */
-.div-psyduck-porcentagem-hp{
+/* haunter BAR STYLE */
+.div-haunter-porcentagem-hp{
     margin-top: 8px;
-    margin-left: -45px;
-    background: white;
-    width: 100px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-psyduck-porcentagem-attack{
-    margin-top: 23px;
-    margin-left: -45px;
-    background: white;
-    width: 104px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-psyduck-porcentagem-defense{
-    margin-top: 19px;
-    margin-left: -45px;
-    background: white;
-    width: 96px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-psyduck-porcentagem-speed{
-    margin-top: 22px;
-    margin-left: -45px;
-    background: white;
-    width: 110px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-/* MEOWTH BAR STYLE */
-.div-meowth-porcentagem-hp{
-    margin-top: 8px;
-    margin-left: -45px;
-    background: white;
-    width: 80px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-meowth-porcentagem-attack{
-    margin-top: 23px;
     margin-left: -45px;
     background: white;
     width: 90px;
@@ -126,42 +87,80 @@ body{
     border: 1px solid black;
 }
 
-.div-meowth-porcentagem-defense{
+.div-haunter-porcentagem-attack{
+    margin-top: 23px;
+    margin-left: -45px;
+    background: white;
+    width: 100px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-haunter-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 70px;
+    width: 90px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-meowth-porcentagem-speed{
+.div-haunter-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 180px;
+    width: 170px;
     height: 10px;
-    background: rgb(255, 200, 0);
+    background: rgb(255, 228, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-/* PIKACHU BAR STYLE ZIKA */
-.div-pikachu-porcentagem-hp{
+.tipo-haunter{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(rgb(112, 88, 152), rgb(85, 67, 116));
+    padding: 0px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border: 1px solid black;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.tipo-haunter2{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(rgb(160, 64, 160), rgb(128, 51, 128));
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.tipo-haunter p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.tipo-haunter2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+
+/* alakazan BAR STYLE */
+.div-alakazan-porcentagem-hp{
     margin-top: 8px;
-    margin-left: -45px;
-    background: white;
-    width: 70px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-pikachu-porcentagem-attack{
-    margin-top: 23px;
     margin-left: -45px;
     background: white;
     width: 110px;
@@ -171,32 +170,125 @@ body{
     border: 1px solid black;
 }
 
-.div-pikachu-porcentagem-defense{
-    margin-top: 19px;
+.div-alakazan-porcentagem-attack{
+    margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 100px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pikachu-porcentagem-speed{
+.div-alakazan-porcentagem-defense{
+    margin-top: 19px;
+    margin-left: -45px;
+    background: white;
+    width: 90px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-alakazan-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
     width: 180px;
     height: 10px;
-    background: rgb(255, 200, 0);
+    background: rgb(154, 255, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+/* gengar BAR STYLE ZIKA */
+.div-gengar-porcentagem-hp{
+    margin-top: 8px;
+    margin-left: -45px;
+    background: white;
+    width: 120px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-gengar-porcentagem-attack{
+    margin-top: 23px;
+    margin-left: -45px;
+    background: white;
+    width: 130px;
+    height: 10px;
+    background: rgb(255, 76, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-gengar-porcentagem-defense{
+    margin-top: 19px;
+    margin-left: -45px;
+    background: white;
+    width: 120px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-gengar-porcentagem-speed{
+    margin-top: 22px;
+    margin-left: -45px;
+    background: white;
+    width: 180px;
+    height: 10px;
+    background: rgb(204, 255, 0);
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-pikachu{
+.tipo-gengar{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(rgb(255, 180, 0), rgb(255, 240, 0));
+    background: linear-gradient(rgb(112, 88, 152), rgb(85, 67, 116));
+    padding: 0px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border: 1px solid black;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.tipo-gengar2{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(rgb(160, 64, 160), rgb(128, 51, 128));
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.tipo-gengar p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.tipo-gengar2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+
+.tipo-alakazan{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(rgb(248, 88, 136), rgb(246, 28, 93));
     padding: 0px 20px;
     border-radius: 5px;
     color: white;
@@ -204,36 +296,17 @@ body{
     border: 1px solid black;
 }
 
-.tipo-pikachu p{
+
+.tipo-alakazan p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-meowth{
-    margin-top: 15px;
-    align-self: center;
-    background: linear-gradient(#a8a878, #8a8a59);
-    padding: 0px 20px;
-    border-radius: 5px;
-    color: white;
-    font-weight: normal;
-    border: 1px solid black;
-}
-
-.tipo-meowth p{
+.tipo-alakazan2 p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-psyduck{
-    margin-top: 15px;
-    align-self: center;
-    background: linear-gradient(#6890f0, #386ceb);
-    padding: 0px 20px;
-    border-radius: 5px;
-    color: white;
-    font-weight: normal;
-    border: 1px solid black;
-}
-
-.tipo-psyduck p{
-    text-shadow: black 1px 1px 2px;
+.juntar-tiposDuPokemon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -9,11 +9,12 @@ body{
 
 .pokemon-card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    height: 100vh;
     gap: 20px;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .pokemon-image{
@@ -58,64 +59,19 @@ body{
     justify-content: space-between;
 }
 
-/* PSYDUCK BAR STYLE */
-.div-psyduck-porcentagem-hp{
+/* onix BAR STYLE */
+.div-onix-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 100px;
+    width: 70px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-psyduck-porcentagem-attack{
-    margin-top: 23px;
-    margin-left: -45px;
-    background: white;
-    width: 104px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-psyduck-porcentagem-defense{
-    margin-top: 19px;
-    margin-left: -45px;
-    background: white;
-    width: 96px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-psyduck-porcentagem-speed{
-    margin-top: 22px;
-    margin-left: -45px;
-    background: white;
-    width: 110px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-/* MEOWTH BAR STYLE */
-.div-meowth-porcentagem-hp{
-    margin-top: 8px;
-    margin-left: -45px;
-    background: white;
-    width: 80px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-meowth-porcentagem-attack{
+.div-onix-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
@@ -126,52 +82,90 @@ body{
     border: 1px solid black;
 }
 
-.div-meowth-porcentagem-defense{
+.div-onix-porcentagem-defense{
     margin-top: 19px;
-    margin-left: -45px;
-    background: white;
-    width: 70px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-meowth-porcentagem-speed{
-    margin-top: 22px;
     margin-left: -45px;
     background: white;
     width: 180px;
     height: 10px;
-    background: rgb(255, 200, 0);
+    background: rgb(2, 255, 85);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-/* PIKACHU BAR STYLE ZIKA */
-.div-pikachu-porcentagem-hp{
+.div-onix-porcentagem-speed{
+    margin-top: 22px;
+    margin-left: -45px;
+    background: white;
+    width: 140px;
+    height: 10px;
+    background: rgb(255, 102, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.tipo-onix{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(#a8a878, #8a8a59);
+    padding: 0px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border: 1px solid black;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.tipo-onix2{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(#f98cff,#f540ff);
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.tipo-onix p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.tipo-onix2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+
+/* geodude BAR STYLE */
+.div-geodude-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 70px;
+    width: 76px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pikachu-porcentagem-attack{
+.div-geodude-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 110px;
+    width: 82px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pikachu-porcentagem-defense{
+.div-geodude-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
@@ -182,21 +176,66 @@ body{
     border: 1px solid black;
 }
 
-.div-pikachu-porcentagem-speed{
+.div-geodude-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 180px;
+    width: 130px;
     height: 10px;
-    background: rgb(255, 200, 0);
+    background: rgb(255, 76, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+/* machop BAR STYLE ZIKA */
+.div-machop-porcentagem-hp{
+    margin-top: 8px;
+    margin-left: -45px;
+    background: white;
+    width: 140px;
+    height: 10px;
+    background: rgb(255, 102, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-machop-porcentagem-attack{
+    margin-top: 23px;
+    margin-left: -45px;
+    background: white;
+    width: 160px;
+    height: 10px;
+    background: rgb(255, 152, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-machop-porcentagem-defense{
+    margin-top: 19px;
+    margin-left: -45px;
+    background: white;
+    width: 110px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-machop-porcentagem-speed{
+    margin-top: 22px;
+    margin-left: -45px;
+    background: white;
+    width: 70px;
+    height: 10px;
+    background: red;
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-pikachu{
+.tipo-machop{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(rgb(255, 180, 0), rgb(255, 240, 0));
+    background: linear-gradient(#c03028, #9d2721);
     padding: 0px 20px;
     border-radius: 5px;
     color: white;
@@ -204,36 +243,49 @@ body{
     border: 1px solid black;
 }
 
-.tipo-pikachu p{
+.tipo-machop p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-meowth{
+
+.tipo-geodude{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878, #8a8a59);
+    background: linear-gradient(#b8a038, #837539);
     padding: 0px 20px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
-.tipo-meowth p{
-    text-shadow: black 1px 1px 2px;
-}
-
-.tipo-psyduck{
+.tipo-geodude2{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#6890f0, #386ceb);
+    background: linear-gradient(#e0c068, #d4a82f);
     padding: 0px 20px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: white;
     font-weight: normal;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.tipo-psyduck p{
+.tipo-geodude p{
     text-shadow: black 1px 1px 2px;
+}
+
+.tipo-geodude2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.juntar-tiposDuPokemon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
