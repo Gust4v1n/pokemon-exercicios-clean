@@ -17,17 +17,15 @@ body{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 315px);
-    grid-template-rows: auto auto;
-    gap: 30px;
-    padding: 30px;
-    max-width: fit-content;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    place-items: center;
 }
 
 .item-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 .item-2 {
@@ -36,11 +34,6 @@ body{
 }
 
 .item-3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.item-4 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -79,55 +72,55 @@ body{
     justify-content: space-between;
 }
 
-/* spearow BAR STYLE */
-.div-spearow-porcentagem-hp{
+/* vileplume BAR STYLE */
+.div-vileplume-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(255, 126, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-attack{
+.div-vileplume-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 120px;
+    width: 160px;
     height: 10px;
-    background: rgb(255, 50, 0);
+    background: rgb(255, 152, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-defense{
+.div-vileplume-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 60px;
+    width: 190px;
+    height: 10px;
+    background: rgb(255, 178, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-vileplume-porcentagem-speed{
+    margin-top: 22px;
+    margin-left: -45px;
+    background: white;
+    width: 100px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-speed{
-    margin-top: 22px;
-    margin-left: -45px;
-    background: white;
-    width: 140px;
-    height: 10px;
-    background: rgb(255, 102, 0);
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.tipo-spearow{
+.tipo-vileplume{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#78c850,#5ca935);
     padding: 0px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -136,10 +129,10 @@ body{
     border: 1px solid black;
 }
 
-.tipo-spearow2{
+.tipo-vileplume2{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a890f0, #9180c4);
+    background: linear-gradient(#a040a0,#803380);
     padding: 0px 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -152,74 +145,63 @@ body{
     padding-right: 24px;
 }
 
-.tipo-spearow p{
+.tipo-vileplume p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-spearow2 p{
+.tipo-vileplume2 p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-/* rattata BAR STYLE */
-.div-rattata-porcentagem-hp{
+/* gloom BAR STYLE */
+.div-gloom-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
     width: 60px;
     height: 10px;
-    background: red;
+    background: rgb(255, 50, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-attack{
+.div-gloom-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
     width: 112px;
     height: 10px;
-    background: rgb(255, 30, 0);
+    background: rgb(255, 76, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-defense{
+.div-gloom-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
     width: 70px;
     height: 10px;
-    background: red;
+    background: rgb(255, 102, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-speed{
+.div-gloom-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
     width: 144px;
     height: 10px;
-    background: rgb(255, 112, 0);
+    background: rgb(255, 228, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-/* pidgey BAR STYLE ZIKA */
-.div-pidgey-porcentagem-hp{
+/* oddish BAR STYLE ZIKA */
+.div-oddish-porcentagem-hp{
     margin-top: 8px;
-    margin-left: -45px;
-    background: white;
-    width: 80px;
-    height: 10px;
-    background: red;
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-pidgey-porcentagem-attack{
-    margin-top: 23px;
     margin-left: -45px;
     background: white;
     width: 90px;
@@ -229,32 +211,43 @@ body{
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-defense{
-    margin-top: 19px;
+.div-oddish-porcentagem-attack{
+    margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 100px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-speed{
+.div-oddish-porcentagem-defense{
+    margin-top: 19px;
+    margin-left: -45px;
+    background: white;
+    width: 110px;
+    height: 10px;
+    background: red;
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.div-oddish-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 112px;
+    width: 60px;
     height: 10px;
     background: rgb(255, 30, 0);
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-pidgey{
+.tipo-oddish{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#78c850,#5ca935);
     padding: 0px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -263,10 +256,10 @@ body{
     border: 1px solid black;
 }
 
-.tipo-pidgey2{
+.tipo-oddish2{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a890f0,#9180c4);
+    background: linear-gradient(#a040a0,#803380);
     padding: 0px 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -339,32 +332,48 @@ body{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-pidgey p{
+.tipo-oddish p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-pidgey2 p{
+.tipo-oddish2 p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-.tipo-rattata{
+.tipo-gloom{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#78c850,#5ca935);
     padding: 0px 20px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
 }
 
+.tipo-gloom2{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(#a040a0,#803380);
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
-.tipo-rattata p{
+.tipo-gloom p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-rattata2 p{
+.tipo-gloom2 p{
     text-shadow: black 1px 1px 2px;
 }
 

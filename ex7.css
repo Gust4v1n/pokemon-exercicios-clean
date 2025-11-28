@@ -17,32 +17,25 @@ body{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 315px);
-    grid-template-rows: auto auto;
-    gap: 30px;
-    padding: 30px;
-    max-width: fit-content;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    place-items: center;
 }
 
 .item-1 {
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
 .item-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.item-3 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
 
-.item-4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+.item-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
 }
 
 .pokemon-card{
@@ -79,8 +72,8 @@ body{
     justify-content: space-between;
 }
 
-/* spearow BAR STYLE */
-.div-spearow-porcentagem-hp{
+/* zubat BAR STYLE */
+.div-zubat-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
@@ -91,43 +84,43 @@ body{
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-attack{
+.div-zubat-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 120px;
-    height: 10px;
-    background: rgb(255, 50, 0);
-    border-radius: 2px;  
-    border: 1px solid black;
-}
-
-.div-spearow-porcentagem-defense{
-    margin-top: 19px;
-    margin-left: -45px;
-    background: white;
-    width: 60px;
+    width: 90px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-speed{
-    margin-top: 22px;
+.div-zubat-porcentagem-defense{
+    margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 140px;
+    width: 70px;
     height: 10px;
-    background: rgb(255, 102, 0);
+    background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.tipo-spearow{
+.div-zubat-porcentagem-speed{
+    margin-top: 22px;
+    margin-left: -45px;
+    background: white;
+    width: 110px;
+    height: 10px;
+    background: rgb(255, 24, 0);
+    border-radius: 2px;  
+    border: 1px solid black;
+}
+
+.tipo-zubat{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#a040a0,#803380);
     padding: 0px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -136,7 +129,7 @@ body{
     border: 1px solid black;
 }
 
-.tipo-spearow2{
+.tipo-zubat2{
     margin-top: 15px;
     align-self: center;
     background: linear-gradient(#a890f0, #9180c4);
@@ -152,17 +145,17 @@ body{
     padding-right: 24px;
 }
 
-.tipo-spearow p{
+.tipo-zubat p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-spearow2 p{
+.tipo-zubat2 p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-/* rattata BAR STYLE */
-.div-rattata-porcentagem-hp{
+/* diglett BAR STYLE */
+.div-diglett-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
@@ -173,7 +166,7 @@ body{
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-attack{
+.div-diglett-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
@@ -184,7 +177,7 @@ body{
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-defense{
+.div-diglett-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
@@ -195,88 +188,71 @@ body{
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-speed{
+.div-diglett-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
     width: 144px;
     height: 10px;
-    background: rgb(255, 112, 0);
+    background: rgb(255, 228, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-/* pidgey BAR STYLE ZIKA */
-.div-pidgey-porcentagem-hp{
+/* snorlax BAR STYLE ZIKA */
+.div-snorlax-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 180px;
     height: 10px;
-    background: red;
+    background: rgb(2, 255, 85);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-attack{
+.div-snorlax-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 90px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(204, 255, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-defense{
+.div-snorlax-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(204, 255, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-speed{
+.div-snorlax-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 112px;
+    width: 60px;
     height: 10px;
     background: rgb(255, 30, 0);
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-pidgey{
+.tipo-snorlax{
     margin-top: 15px;
     align-self: center;
     background: linear-gradient(#a8a878,#8a8a59);
     padding: 0px 20px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
-}
-
-.tipo-pidgey2{
-    margin-top: 15px;
-    align-self: center;
-    background: linear-gradient(#a890f0,#9180c4);
-    padding: 0px 20px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: white;
-    font-weight: normal;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 /* ekans BAR STYLE ZIKA */
@@ -339,19 +315,19 @@ body{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-pidgey p{
+.tipo-snorlax p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-pidgey2 p{
+.tipo-snorlax2 p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-.tipo-rattata{
+.tipo-diglett{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#e0c068,#d4a82f);
     padding: 0px 20px;
     border-radius: 5px;
     color: white;
@@ -360,11 +336,11 @@ body{
 }
 
 
-.tipo-rattata p{
+.tipo-diglett p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-rattata2 p{
+.tipo-diglett2 p{
     text-shadow: black 1px 1px 2px;
 }
 

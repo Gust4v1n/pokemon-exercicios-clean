@@ -17,12 +17,10 @@ body{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 315px);
-    grid-template-rows: auto auto;
-    gap: 30px;
-    padding: 30px;
-    max-width: fit-content;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    place-items: center;
 }
 
 .item-1 {
@@ -32,17 +30,12 @@ body{
 
 .item-2 {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 .item-3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.item-4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
 }
 
 .pokemon-card{
@@ -79,64 +72,66 @@ body{
     justify-content: space-between;
 }
 
-/* spearow BAR STYLE */
-.div-spearow-porcentagem-hp{
+/* moltres BAR STYLE */
+.div-moltres-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-attack{
+.div-moltres-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 120px;
+    width: 180px;
     height: 10px;
-    background: rgb(255, 50, 0);
+    background: rgb(255, 254, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-defense{
+.div-moltres-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 60px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-spearow-porcentagem-speed{
+.div-moltres-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 140px;
+    width: 150px;
     height: 10px;
-    background: rgb(255, 102, 0);
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.tipo-spearow{
+.tipo-moltres{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#f08030,#dd6610);
     padding: 0px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
-.tipo-spearow2{
+.tipo-moltres2{
     margin-top: 15px;
     align-self: center;
     background: linear-gradient(#a890f0, #9180c4);
@@ -148,125 +143,125 @@ body{
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
-.tipo-spearow p{
+.tipo-moltres p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-spearow2 p{
+.tipo-moltres2 p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-/* rattata BAR STYLE */
-.div-rattata-porcentagem-hp{
+/* zapdos BAR STYLE */
+.div-zapdos-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 60px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-attack{
+.div-zapdos-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 112px;
+    width: 150px;
     height: 10px;
-    background: rgb(255, 30, 0);
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-defense{
+.div-zapdos-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 70px;
+    width: 140px;
     height: 10px;
-    background: red;
+    background: rgb(255, 178, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-rattata-porcentagem-speed{
+.div-zapdos-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 144px;
+    width: 180px;
     height: 10px;
-    background: rgb(255, 112, 0);
+    background: rgb(255, 254, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-/* pidgey BAR STYLE ZIKA */
-.div-pidgey-porcentagem-hp{
+/* articuno BAR STYLE ZIKA */
+.div-articuno-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 150px;
     height: 10px;
-    background: red;
+    background: rgb(255, 204, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-attack{
+.div-articuno-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
-    width: 90px;
+    width: 140px;
     height: 10px;
-    background: red;
+    background: rgb(255, 178, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-defense{
+.div-articuno-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 80px;
+    width: 180px;
     height: 10px;
-    background: red;
+    background: rgb(255, 254, 0);
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-pidgey-porcentagem-speed{
+.div-articuno-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 112px;
+    width: 140px;
     height: 10px;
-    background: rgb(255, 30, 0);
+    background: rgb(255, 178, 0);
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-pidgey{
+.tipo-articuno{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#98d8d8,#69c6c6);
     padding: 0px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-.tipo-pidgey2{
+.tipo-articuno2{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a890f0,#9180c4);
+    background: linear-gradient(#a890f0, #9180c4);
     padding: 0px 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -275,23 +270,22 @@ body{
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
-/* ekans BAR STYLE ZIKA */
-.div-ekans-porcentagem-hp{
+
+/* spinarak BAR STYLE ZIKA */
+.div-spinarak-porcentagem-hp{
     margin-top: 8px;
     margin-left: -45px;
     background: white;
-    width: 70px;
+    width: 80px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-ekans-porcentagem-attack{
+.div-spinarak-porcentagem-attack{
     margin-top: 23px;
     margin-left: -45px;
     background: white;
@@ -302,69 +296,107 @@ body{
     border: 1px solid black;
 }
 
-.div-ekans-porcentagem-defense{
+.div-spinarak-porcentagem-defense{
     margin-top: 19px;
     margin-left: -45px;
     background: white;
-    width: 88px;
+    width: 80px;
     height: 10px;
     background: red;
     border-radius: 2px;  
     border: 1px solid black;
 }
 
-.div-ekans-porcentagem-speed{
+.div-spinarak-porcentagem-speed{
     margin-top: 22px;
     margin-left: -45px;
     background: white;
-    width: 110px;
+    width: 60px;
     height: 10px;
     background: rgb(255, 30, 0);
     border-radius: 2px;
     border: 1px solid black;
 }
 
-.tipo-ekans{
+.tipo-spinarak{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(#a8b820,#8d9a1b);
+    padding: 0px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border: 1px solid black;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.tipo-spinarak2{
     margin-top: 15px;
     align-self: center;
     background: linear-gradient(#a040a0,#803380);
     padding: 0px 20px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     color: white;
     font-weight: normal;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.tipo-ekans p{
-    text-shadow: black 1px 1px 2px;
-}
-
-.tipo-pidgey p{
-    text-shadow: black 1px 1px 2px;
-}
-
-.tipo-pidgey2 p{
+.tipo-spinarak p{
     text-shadow: black 1px 1px 2px;
 }
 
 
-.tipo-rattata{
+.tipo-spinarak2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.tipo-articuno p{
+    text-shadow: black 1px 1px 2px;
+}
+
+.tipo-articuno2 p{
+    text-shadow: black 1px 1px 2px;
+}
+
+
+.tipo-zapdos{
     margin-top: 15px;
     align-self: center;
-    background: linear-gradient(#a8a878,#8a8a59);
+    background: linear-gradient(#f8d030,#f0c108);
     padding: 0px 20px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: white;
     font-weight: normal;
     border: 1px solid black;
 }
 
+.tipo-zapdos2{
+    margin-top: 15px;
+    align-self: center;
+    background: linear-gradient(#a890f0, #9180c4);
+    padding: 0px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-weight: normal;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 22px;
+    padding-right: 22px;
+}
 
-.tipo-rattata p{
+.tipo-zapdos p{
     text-shadow: black 1px 1px 2px;
 }
 
-.tipo-rattata2 p{
+.tipo-zapdos2 p{
     text-shadow: black 1px 1px 2px;
 }
 
